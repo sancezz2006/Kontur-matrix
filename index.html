@@ -4,103 +4,91 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Kontur</title>
-    <meta name="description" content="">
+    <meta name="description" content="Test task for Kontur">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
 
-<div id="matrix-settings" class="matrix-settings">
-    <div class="wrapper">
-        <div class="row">
-            <a href="#" class="btn-multiply" id="btn-multiply-matrix">
-                <div class="upper-half-multiply-button"></div>
-                <div class="lower-half-multiply-button"></div>
-                <span>Умножить Матрицы</span>
-            </a>
-        </div>
-        <div class="row">
-            <div href="#" class="standard-btn" id="btn-clear-matrix">
-                Очистить матрицы
-
+    <div id="matrix-settings" class="matrix-settings">
+        <div class="wrapper">
+            <div class="row">
+                <a href="#" class="btn-multiply" id="btn-multiply-matrix">
+                    <div class="upper-half-multiply-button"></div>
+                    <div class="lower-half-multiply-button"></div>
+                    <span>Умножить Матрицы</span>
+                </a>
             </div>
-        </div>
-        <div class="row">
-            <div href="#" class="standard-btn" id="btn-change-matrix">
-                Поменять матрицы
-
+            <div class="row">
+                <div href="#" class="standard-btn" id="btn-clear-matrix">
+                    Очистить матрицы
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <label>
-                <input type="radio" name="RadioOptions" id="radio-matrix-A" class="radio-matrix" checked="true" value="a">
-                <label for="radio-matrix-A">Матрица A</label>
-                <input type="radio" name="RadioOptions" id="radio-matrix-B" class="radio-matrix" value="b">
-                <label for="radio-matrix-B">Матрица B</label>
-            </label>
-        </div>
-        <div class="row">
-            <div href="#" class="standard-btn btn-mini" id="btn-increase-row">
-                Добавить
+            <div class="row">
+                <div href="#" class="standard-btn" id="btn-change-matrix">
+                    Поменять матрицы
+                </div>
             </div>
-
-            <div href="#" class="standard-btn btn-mini" id="btn-decrease-row">
-                Удалить
+            <div class="row">
+                <label>
+                    <input type="radio" name="RadioOptions" id="radio-matrix-A" class="radio-matrix" checked="true" value="a">
+                    <label for="radio-matrix-A">Матрица A</label>
+                    <input type="radio" name="RadioOptions" id="radio-matrix-B" class="radio-matrix" value="b">
+                    <label for="radio-matrix-B">Матрица B</label>
+                </label>
             </div>
-            Строку
-        </div>
-        <div class="row">
-            <div href="#" class="standard-btn btn-mini" id="btn-increase-col">
-                Добавить
+            <div class="row">
+                <div href="#" class="standard-btn btn-mini" id="btn-increase-row">
+                    Добавить
+                </div>
+                <div href="#" class="standard-btn btn-mini" id="btn-decrease-row">
+                    Удалить
+                </div>
+                Строку
             </div>
-            <div href="#" class="standard-btn btn-mini" id="btn-decrease-col">
-                Удалить
+            <div class="row">
+                <div href="#" class="standard-btn btn-mini" id="btn-increase-col">
+                    Добавить
+                </div>
+                <div href="#" class="standard-btn btn-mini" id="btn-decrease-col">
+                    Удалить
+                </div>
+                Столбец
             </div>
-            Столбец
-        </div>
-        <div class="row">
-            <p class="text-warning" id="warning-message"></p>
+            <div class="row">
+                <p class="text-warning" id="warning-message"></p>
+            </div>
         </div>
     </div>
-</div>
 
 
+    <div class="matrix-preview" id="matrix-preview">
+        <div class="wrapper">
+            <div class="inline" >
+                <div class="matrix-c-wrapper">
+                    <h2>Результат</h2>
+                    <div class="matrix">
+                        <table id="matrix-result" class="matrix-border"></table>
+                    </div>
+                </div>
 
-<div class="matrix-preview" id="matrix-preview">
-    <div class="wrapper">
+                <div class="matrix-b-wrapper" >
+                    <h2>B</h2>
+                    <div class="matrix" >
+                        <table id="matrix-b" class="matrix-border"></table>
+                    </div>
+                </div>
+            </div>
 
-        <div class="inline" >
-            <div class="matrix-c-wrapper">
-                <h2>Результат</h2>
-
+            <div class="matrix-a-wrapper" >
+                <h2>A</h2>
                 <div class="matrix">
-                    <table id="matrix-result" class="matrix-border"></table>
-                </div>
-            </div>
-
-            <div class="matrix-b-wrapper" >
-                <h2>B</h2>
-                <div class="matrix" >
-                    <table id="matrix-b" class="matrix-border"></table>
+                    <table id="matrix-a" class="matrix-border"></table>
                 </div>
             </div>
         </div>
-
-
-        <div class="matrix-a-wrapper" >
-            <h2>A</h2>
-            <div class="matrix">
-                <table id="matrix-a" class="matrix-border"></table>
-            </div>
-        </div>
-
-
-
     </div>
-</div>
-
-
 
 <script src="js/main.js"></script>
 </body>
