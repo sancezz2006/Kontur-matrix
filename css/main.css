@@ -351,8 +351,8 @@ input[type="radio"] + label::before {
 
     height: 18px;
     width: 18px;
-    margin: 0 5px 0 0;
-    background-image: url(/img/spritesheet.png);
+    margin: 0 3px -5px 10px;
+    background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     display: inline-block;
 }
@@ -394,7 +394,7 @@ input[type="radio"]:checked + label::before {
 }
 /** SPRITE */
 .sprite {
-    background-image: url(/img/spritesheet.png);
+    background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
