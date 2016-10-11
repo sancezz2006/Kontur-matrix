@@ -266,7 +266,7 @@ input[type="text:disabled"]{
 }
 
 
-.standard-btn {
+.default-btn {
     background: -moz-linear-gradient(90deg, rgba(237,237,237,1) 0%, rgba(253,253,253,1) 100%); /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(253,253,253,1)), color-stop(100%, rgba(237,237,237,1))); /* safari4+,chrome */
     background: -webkit-linear-gradient(90deg, rgba(237,237,237,1) 0%, rgba(253,253,253,1) 100%); /* safari5.1+,chrome10+ */
@@ -291,7 +291,7 @@ input[type="text:disabled"]{
      vertical-align: middle;
      text-decoration:none;
  }
-.standard-btn:hover, .standard-button:focus {
+.default-btn:hover, .standard-button:focus {
     background: -moz-linear-gradient(90deg, rgba(242,242,242,1) 0%, rgba(223,223,223,1) 100%); /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(223,223,223,1)), color-stop(100%, rgba(242,242,242,1))); /* safari4+,chrome */
     background: -webkit-linear-gradient(90deg, rgba(242,242,242,1) 0%, rgba(223,223,223,1) 100%); /* safari5.1+,chrome10+ */
@@ -302,7 +302,7 @@ input[type="text:disabled"]{
 
  outline: 0 none;
  }
-.standard-btn:active{
+.default-btn:active{
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
 
     background: -moz-linear-gradient(90deg, rgba(224,224,224,1) 0%, rgba(217,217,217,1) 100%); /* ff3.6+ */
@@ -312,6 +312,16 @@ input[type="text:disabled"]{
     background: -ms-linear-gradient(90deg, rgba(224,224,224,1) 0%, rgba(217,217,217,1) 100%); /* ie10+ */
     background: linear-gradient(0deg, rgba(224,224,224,1) 0%, rgba(217,217,217,1) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9d9d9', endColorstr='#e0e0e0',GradientType=0 ); /* ie6-9 */
+}
+
+.default-btn span{
+    padding-left: 10px;
+}
+
+.fa {
+    margin-left: -10px;
+    margin-top: 6px;
+    position: absolute;
 }
 .increase-decrease-btn{
     margin-left: 10px;
